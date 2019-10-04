@@ -1,0 +1,39 @@
+/* pages/search/index.wxss */
+page{
+  background-color: #ccc;
+}
+.search{
+
+}
+.input{
+  margin: 20rpx 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchinput{
+
+  height: 60rpx;
+  width: 70%;
+  background-color: aliceblue;
+}
+.butt{
+  width: 20%;
+  height: 50rpx;
+  font-size: 25rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10rpx;
+}
+.content{
+  
+}
+.item{
+  overflow: auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 15rpx 10rpx;
+  border-bottom: 1rpx solid #ccc;
+  background-color: aliceblue;
+}

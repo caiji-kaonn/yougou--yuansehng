@@ -1,0 +1,16 @@
+/* tab栏 开始 */
+.tabgroup .tabb {
+  height: 90rpx;
+  display: flex;
+}
+.tabgroup .tabb .tex {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabgroup .tabb .active {
+  color: var(--themeColor);
+  border-bottom: 1px solid currentColor;
+}
+/* tab栏 结束 */

@@ -1,0 +1,37 @@
+/* 轮播图 开始 */
+.swiper swiper {
+  height: 336.89839572rpx;
+}
+/* 轮播图 结束 */
+/* 导航 开始 */
+view.navigation {
+  display: flex;
+}
+view.navigation navigator.navi {
+  flex: 1;
+  padding: 10rpx;
+}
+/* 导航 结束 */
+/* 楼层 开始 */
+view.indexfloor view.floorgroud {
+  padding: 10rpx;
+}
+view.indexfloor view.floorgroud view.floor_content {
+  overflow: hidden;
+}
+view.indexfloor view.floorgroud view.floor_content navigator {
+  float: left;
+  width: 33.33%;
+  border-left: 5rpx solid white;
+  border-right: 5rpx solid #fff;
+}
+view.indexfloor view.floorgroud view.floor_content navigator:nth-last-child(-n+4) {
+  height: 211.0745614rpx;
+}
+view.indexfloor view.floorgroud view.floor_content navigator:nth-last-child(-n+4) image {
+  height: 100%;
+}
+view.indexfloor view.floorgroud view.floor_content navigator:nth-last-child(-n+2) {
+  border-top: 5rpx solid white;
+}
+/* 楼层 结束 */

@@ -1,0 +1,50 @@
+/* 右边框开始 */
+.cate {
+  height: calc( 100vh - 90rpx );
+  overflow: hidden;
+  display: flex;
+}
+.cate .menuegroup {
+  width: 200rpx;
+}
+.cate .menuegroup .cateright {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.cate .menuegroup .active {
+  color: var(--themeColor);
+  border-left: 5rpx solid currentColor;
+}
+.cate .goodlist {
+  flex: 1;
+}
+.cate .goodlist .cateleft .goodlist_group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52rpx;
+}
+.cate .goodlist .cateleft .goodlist_group .goodlist_title {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+}
+.cate .goodlist .cateleft .goodlist_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cate .goodlist .cateleft .goodlist_content .navigator {
+  width: 33.3%;
+  text-align: center;
+}
+.cate .goodlist .cateleft .goodlist_content .navigator .image {
+  width: 90%;
+}
+.cate .goodlist .cateleft .goodlist_content .navigator .text {
+  font-size: 24rpx;
+}
+/* 右边框结束 */

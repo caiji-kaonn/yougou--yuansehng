@@ -1,0 +1,20 @@
+<Searchinput></Searchinput>
+<Tab tablist="{{tablist}}" currentindex="{{currentindex}}" 
+bindsendindex="sendindex">
+<view class="goodlistcontent" wx:if="{{currentindex===0}}">
+  <view class="goods" >
+    <navigator class="goodlistItem" wx:for="{{goodsItem}}" 
+    wx:key="cat_id" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+      <view class="image">
+        <image src="{{item.goods_small_logo || 'http://img0.imgtn.bdimg.com/it/u=4043413238,1636090838&fm=26&gp=0.jpg'}}" mode="widthFix"></image>
+      </view>
+      <view class="xiangqing">
+        <view class="title">{{item.goods_name}}</view>
+        <view class="price">￥{{item.goods_price}}</view>
+      </view>
+    </navigator>
+  </view>
+</view>
+<view class="goodlistcontent" wx:elif="{{currentindex===1}}">1</view>
+<view class="goodlistcontent" wx:else>2</view>
+</Tab>

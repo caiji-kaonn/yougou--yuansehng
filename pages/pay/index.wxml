@@ -1,0 +1,42 @@
+<view class="pay">
+  <view  class="address_info">
+    <view class="userinfo">
+      <view class="username">{{address.userName}}</view>
+      <view class="useraddress">{{address.detail}}</view>
+    </view>
+    <view class="userphone">
+      {{address.telNumber}}
+    </view>
+  </view>
+  <!-- 商品详情 -->
+  <view class="shopdetail">
+    <view class="title">购物车</view>
+    <view class="shopxiangqing" wx:for="{{goodlist}}" wx:key="goods_id">
+      <!-- 图片 -->
+      <view class="picture">
+        <image class="pp" src="{{item.goods_small_logo}}" mode="widthFix"></image>
+      </view>
+      <!-- 商品详情 -->
+      <view class="shangpin">
+        <view class="goodsname">{{item.goods_name}}</view>
+        <view class="price">$ {{item.goods_price}}</view>
+        <view class="checkchecks">
+          <view class="number">{{item.goods_buy}}</view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <!-- 底部栏 -->
+  <view class="tabjs">
+    <view class="heji">
+      <view class="toal">合计：￥ <text>{{totalprice}}</text>
+      </view>
+      <view class="yunfei">包含运费</view>
+    </view>
+    <view class="jisuan" bindtap="gettotalprice">
+      支付({{goodsnumber}})
+    </view>
+  </view>
+
+</view>

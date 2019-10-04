@@ -1,0 +1,61 @@
+<!--pages/cart/index.wxml-->
+<view class="cart">
+  <!-- 按钮 -->
+  <button type="primary" wx:if="{{!address}}" open-type="openSetting" class="adressbtn" plain bindtap="clickadress">添加收货地址</button>
+ <view wx:else class="address_info">
+   <view class="userinfo">
+   <view class="username">{{address.userName}}</view>
+   <view class="useraddress">{{address.detail}}</view>
+   </view>
+   <view class="userphone">
+    {{address.telNumber}}
+   </view>
+ </view>
+  <!-- 商品详情 -->
+ <view class="shopdetail" >
+   <view class="title">优购生活馆</view>
+   <view class="shopxiangqing" wx:for="{{goodlist}}" 
+   wx:key="goods_id">
+     <!-- 复选框 -->
+    <view class="check">
+      <checkbox-group bindchange="handleitem" data-index="{{index}}">
+        <checkbox checked="{{item.checked}}" >
+        </checkbox>
+      </checkbox-group>
+    </view>
+    <!-- 图片 -->
+    <view class="picture">
+      <image class="pp" src="{{item.goods_small_logo}}" mode="widthFix"></image>
+    </view>
+    <!-- 商品详情 -->
+    <view class="shangpin">
+     <view class="goodsname">{{item.goods_name}}</view>
+     <view class="price">$ {{item.goods_price}}</view>
+     <view class="checkchecks">
+       <view class="btn_num" bindtap="updatenum" data-index="{{index}}" data-opera="{{-1}}">-</view>
+       <view class="number">{{item.goods_buy}}</view>
+       <view class="btn_num" bindtap="updatenum" data-index="{{index}}" data-opera="{{1}}">+</view>
+     </view>
+    </view>
+
+   </view>
+ </view>
+ <!-- 底部栏 -->
+<view class="tabjs">
+  <view class="chescks">
+    <checkbox-group>
+      <checkbox checked="{{allchecked}}">
+        全选
+      </checkbox>
+    </checkbox-group>
+  </view>
+  <view class="heji">
+    <view class="toal">合计：￥ <text>{{totalprice}}</text>
+      </view>
+    <view class="yunfei">包含运费</view>
+  </view>
+  <view class="jisuan" bindtap="gettotalprice">
+    结算({{goodsnumber}})
+  </view>
+</view>
+</view>

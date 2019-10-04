@@ -1,0 +1,67 @@
+<!--pages/goods_detail/index.wxml-->
+<view class="goodsdetail">
+  <!-- 轮播图 开始 -->
+  <view class="spe">
+    <swiper class="swiperbox" autoplay circular indicator-dots>
+      <swiper-item class="swiperitem" wx:for="{{gooddetaillist.pics}}" wx:key="pics_id" bindtap="clickprewf"
+        data-index="{{index}}">
+        <image src="{{item.pics_mid_url}}" mode="aspectFit"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 轮播图结束 -->
+  <!-- 价格和介绍 开始-->
+  <view class="price"> ￥{{gooddetaillist.goods_price}}</view>
+  <view class="introuduce">
+    <view class="introducegoods">{{gooddetaillist.goods_name}}</view>
+    <view class="detail_name_collect">
+      <text class="iconfont icon-shoucang"></text>
+      <view>收藏</view>
+    </view>
+  </view>
+  <!-- 价格和介绍 结束-->
+  <!-- 详情 开始-->
+  <view class="detail">
+    <view class="ttitle">图文详情</view>
+    <rich-text nodes=" {{gooddetaillist.goods_introduce}}">
+    </rich-text>
+  </view>
+  <!-- 详情 结束-->
+  <!-- tab栏 开始-->
+  <view class="tablan">
+    <view class="heihei">
+      <button open-type="contact"></button>
+      <text class="iconfont icon-kefu"></text>
+        <view>
+          联系客服
+        </view>
+    </view>
+    <view class="heihei">
+        <button open-type="share"></button>
+        <text class="iconfont icon-yixianshi-"></text>
+        <view>
+          分享
+        </view>
+    </view>
+    <navigator class="heihei" open-type="switchTab" url="/pages/cart/index" >
+        <button open-type="switchTab"></button>
+        <text class="iconfont icon-gouwuche"></text>
+        <view>
+          购物车
+        </view>
+    </navigator>
+    <view class="cart" bindtap="cartadd">
+        <view>
+          加入购物车
+        </view>
+    </view>
+    <view class="buy">
+        <view>
+          立即购买
+        </view>
+    </view>
+  </view>
+  <!-- tab栏 结束-->
+
+
+</view>

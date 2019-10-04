@@ -1,0 +1,57 @@
+/* 右边框开始 */
+.cate{
+  height: ~'calc( 100vh - 90rpx )';
+  overflow: hidden;
+ display: flex;
+  .menuegroup{
+    width: 200rpx;
+    .cateright{
+     height: 80rpx;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 30rpx;
+    }
+    .active{
+      color: var(--themeColor);
+      border-left: 5rpx solid currentColor;
+    }
+  }
+  .goodlist{
+    flex: 1;
+    .cateleft{
+      .goodlist_group{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 52rpx;
+        .goodlist_title{
+          margin-left: 20rpx;
+          margin-right: 20rpx;
+          font-size: 30rpx;
+        }
+      }
+      .goodlist_content{
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: center;
+      //  align-items: center;
+        .navigator{
+          width: 33.3%;
+         text-align: center;
+          .image{
+            width: 90%;
+          }
+          .text{
+           font-size: 24rpx;
+          }
+ 
+        }
+      }
+
+    }
+  }
+}
+
+
+/* 右边框结束 */

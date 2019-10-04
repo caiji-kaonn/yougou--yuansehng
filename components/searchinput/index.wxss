@@ -1,0 +1,15 @@
+/* 搜索框开始 */
+.search {
+  background-color: var(--themeColor);
+  height: 80rpx;
+  padding: 10rpx;
+}
+navigator {
+  background-color: white;
+ padding: 5rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 52rpx;
+  font-size: 35rpx;
+}
+/* 搜索框结束 */

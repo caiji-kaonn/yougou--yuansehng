@@ -1,0 +1,13 @@
+<!--pages/search/index.wxml-->
+<view class="search">
+  <view class="input">
+   <input type="text" class="searchinput"></input>
+   <button class="butt">取消</button>
+  </view>
+  <view class="content">
+   <navigator class="item" target="" url="/pages/goods_detail/index?goods_id={{item.goods_id}}" >
+     {{}}
+   </navigator>
+     
+  </view>
+</view>

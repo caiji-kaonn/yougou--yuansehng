@@ -1,0 +1,35 @@
+/* pages/goods_list/index.wxss */
+/* 商品列表开始 */
+.goodlistcontent .goods navigator.goodlistItem {
+  display: flex;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #ccc;
+}
+.goodlistcontent .goods navigator.goodlistItem .image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goodlistcontent .goods navigator.goodlistItem .image image {
+  width: 70%;
+}
+.goodlistcontent .goods navigator.goodlistItem .xiangqing {
+  flex: 2;
+  display: flex;
+  font-size: 30rpx;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10rpx;
+}
+.goodlistcontent .goods navigator.goodlistItem .xiangqing .title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.goodlistcontent .goods navigator.goodlistItem .xiangqing .price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}
+/* 商品列表结束 */

@@ -1,0 +1,11 @@
+<view class="tabgroup">
+  <view class="tabb">
+    <view class="tex {{currentindex===index?'active':''}}" wx:for="{{tablist}}" wx:key="id" 
+    bindtap="handerindex" data-index="{{index}}">
+      {{item.txt}}
+    </view>
+  </view>
+  <view class="content">
+    <slot></slot>
+  </view>
+</view>

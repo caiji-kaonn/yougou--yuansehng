@@ -1,0 +1,87 @@
+/* pages/pay/index.wxss */
+/* pages/cart/index.wxss */
+.pay{}
+.adressbtn{
+  margin:10rpx auto;
+  display: block;
+  width: 60%;
+}
+.shopdetail{
+ margin-top: 10rpx;
+
+}
+.title{
+font-size: 38rpx;
+border-top: 5rpx solid #ccc;
+border-bottom: 5rpx solid #ccc;
+padding: 10rpx 0;
+}
+.shopxiangqing{
+  display: flex;
+}
+
+.picture{
+  flex:3;
+}
+.pp{
+  width: 90%;
+}
+.shangpin{
+  margin-top: 10rpx;
+  flex: 5;
+  padding: 6rpx; 
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+.goodsname{
+  font-size: 32rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.price{
+  display: inline-block;
+  color: var(--themeColor);
+  font-size: 40rpx;
+text-align: left;
+}
+
+.number{
+  margin: 10rpx;
+  font-size: 30rpx;
+}
+
+.tabjs{
+  padding-top: 10rpx;
+  width: 100%;
+height: 100rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  border-top: 1rpx solid #ccc;
+}
+
+.heji{
+  text-align: right;
+  flex: 5;
+}
+.toal{
+  font-size: 34rpx;
+}
+.yunfei{
+
+}
+.jisuan{
+flex: 4;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 40rpx;
+color: white;
+background-color: red;
+margin-left: 10rpx;
+}
